@@ -18,6 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.companyMicroservices.Model.IPO;
 import com.companyMicroservices.Repository.IPORepository;
 import com.companyMicroservices.Services.IPOServiceImpl;
+import com.companyMicroservices.Services.IPOService;
 
 
 
@@ -25,7 +26,7 @@ import com.companyMicroservices.Services.IPOServiceImpl;
 @SpringBootTest
 public class IPOServiceTest{
 	@Autowired
-	private IPOServiceImpl iposervice;
+	private IPOService iposervice;
 	@MockBean
 	private IPORepository iporepository;
 

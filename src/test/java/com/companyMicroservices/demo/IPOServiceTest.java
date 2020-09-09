@@ -31,7 +31,7 @@ public class IPOServiceTest{
 
 	@Test
 	public void getIPOwhenRecordSatisfyingConditionExistTest() {
-		when(iporepository.findAll()).thenReturn(Stream
+		when(iporepository.findAllIpo()).thenReturn(Stream
 				.of(new IPO(1,"one", Date.valueOf("2020-02-15"),4.2f, "nil", 2)).collect(Collectors.toList()));
 		List <IPO> ipolist=iposervice.getIpo();
 		assertEquals(ipolist.get(0).getIpo_id(), 1);		
